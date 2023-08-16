@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+      {
+        "fileMatch": [
+          "/docs/rp.json"
+        ],
+        "url": "/docs/schemas/rp.json"
+      }
+    ]
+}
