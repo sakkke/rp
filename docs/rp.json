@@ -1,0 +1,14 @@
+{
+  "remotes": [
+    {
+      "name": "github",
+      "fetch": "https://github.com/"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "sakkke/rp",
+      "remote": "github"
+    }
+  ]
+}

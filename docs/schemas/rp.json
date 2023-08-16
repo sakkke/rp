@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "rp",
+  "description": "rp config",
+  "type": "object",
+  "properties": {
+    "remotes": {
+      "type": "array",
+      "description": "Remote list",
+      "items": {
+        "type": "object",
+        "description": "Remote config",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Remote name"
+          },
+          "fetch": {
+            "type": "string",
+            "description": "Remote URL to fetch"
+          }
+        },
+        "required": ["name", "fetch"]
+      },
+      "uniqueItems": true
+    },
+    "repositories": {
+      "type": "array",
+      "description": "Repository list",
+      "items": {
+        "type": "object",
+        "description": "Repository config",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Repository name"
+          },
+          "remote": {
+            "type": "string",
+            "description": "Repository remote URL"
+          }
+        },
+        "required": ["name"]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": ["repositories"]
+}
