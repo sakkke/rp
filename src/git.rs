@@ -3,8 +3,6 @@ use std::process::Command;
 pub fn clone(repository: &str, directory: &str) -> Result<(), String> {
     let status = Command::new("git")
         .arg("clone")
-        .arg("--depth")
-        .arg("1")
         .arg("-q")
         .arg(repository)
         .arg(directory)
